@@ -22,9 +22,15 @@ const FormMain = () => {
                 <FormText texto='Email' />
                 <TextInput style={styles.input1} placeholder={'Email'}></TextInput>
                 <FormText texto='Upload CV/Resume' />
-                <TextInput style={styles.input2}><FontAwesome5 name="file-upload" size={40} color="#3174FE" /></TextInput>
+                <View style={styles.input2}>
+                    
+                    <FontAwesome5  name="file-upload" size={60} color="#3174FE" />
+                    <Text>Browse File</Text>
+                    </View>
                 <FormText texto='Motivation Letter(Optional)' />
-                <TextInput style={styles.input3} placeholder={'Motivation Letter...'}></TextInput>
+                <View style={styles.input3} >
+                    <FormText texto='Motivation Letter...'/>
+                </View>
 
             </View>
 
@@ -59,7 +65,6 @@ const styles = StyleSheet.create({
     },
     body: {
         flex: 10,
-        backgroundColor: '#C09553',
         justifyContent: 'flex-start',
         textAlign: 'left',
 
@@ -81,7 +86,6 @@ const styles = StyleSheet.create({
         backgroundColor: '#FAFAFA',
         borderRadius: 20,
         padding: 14,
-        textAlign: 'left',
         fontSize: 18,
         color: '#004445',
         width: '90%',
@@ -98,19 +102,20 @@ const styles = StyleSheet.create({
         width: '90%',
         marginTop: 10,
         marginLeft: 20,
-        alignItems: 'flex-end',
+        alignItems: 'center',
+        flexDirection:'column'
 
     },
     input3: {
         backgroundColor: '#FAFAFA',
         borderRadius: 20,
         padding: 80,
-        textAlign: 'right',
         fontSize: 18,
         color: '#004445',
         width: '90%',
         marginTop: 10,
-        marginLeft: 20
+        marginLeft: 20,
+        justifyContent:'flex-start'
     },
     botonSubmit: {
         backgroundColor: '#3062C8',
@@ -122,11 +127,11 @@ const styles = StyleSheet.create({
     },
     textbotonSubmit: {
         color: '#ffff',
-        fontSize: 30,
+        fontSize: 27,
         fontWeight:'bold',
         textAlign: 'center',
         fontStyle:'normal'
-    },
+    }
 
 });
 
