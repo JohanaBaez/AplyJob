@@ -14,7 +14,10 @@ const FormMain = () => {
             </View>
 
             <View style={styles.body}>
-            
+            <Text style={styles.textinput}>Full Name</Text>
+            <Text style={styles.textinput}>Email</Text>
+            <Text>Upload CV/Resume</Text>
+            <Text>Motivation Letter(Optional)</Text>
             </View>
 
             <View style={styles.foot}>
@@ -58,6 +61,9 @@ const styles = StyleSheet.create({
         fontStyle: 'normal',
         paddingLeft:'10%',
         fontWeight:'bold'
+    },
+    textinput:{
+        fontSize: 16,
     }
 });
 
