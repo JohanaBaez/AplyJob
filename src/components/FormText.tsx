@@ -20,6 +20,8 @@ const styles = StyleSheet.create({
     textinput:{
         fontSize: 16,
         marginTop:10,
+        
+
     }
 });
 

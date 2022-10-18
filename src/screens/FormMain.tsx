@@ -52,16 +52,17 @@ const styles = StyleSheet.create({
     },
     body: {
         flex: 10,
-        backgroundColor: '#C09553',
+        backgroundColor: '#C09553',  
+         alignItems:'center',
+         justifyContent:'flex-start'
+    
     },
     foot: {
         flex: 1,
-
         flexDirection: "row",
         justifyContent: 'space-between',
         paddingHorizontal: 20,
         backgroundColor: '#8AB4F8',
-
 
     }, text: {
         fontSize: 28,
@@ -71,7 +72,7 @@ const styles = StyleSheet.create({
     },
     input1: {
         backgroundColor: '#FAFAFA',
-        borderRadius: 40,
+        borderRadius: 20,
         padding: 14,
         textAlign: 'left',
         fontSize: 22,
