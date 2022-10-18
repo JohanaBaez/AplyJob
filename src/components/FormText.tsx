@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     textinput:{
         fontSize: 16,
         marginTop:10,
-        
+        marginLeft:30
 
     }
 });
