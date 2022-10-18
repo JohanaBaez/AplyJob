@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import { AntDesign } from '@expo/vector-icons'; 
+import { Button, StyleSheet, Text, TextInput, Touchable, View } from 'react-native';
+import { AntDesign } from '@expo/vector-icons';
+import FormText from '../components/FormText';
 
 const FormMain = () => {
 
@@ -9,19 +10,25 @@ const FormMain = () => {
             <StatusBar style="dark" />
 
             <View style={styles.header}>
-            <AntDesign name="arrowleft" size={40} color="black" />
-            <Text style={styles.text}>Aply Job</Text>
+                <AntDesign name="arrowleft" size={28} color="black" />
+                <Text style={styles.text}>Aply Job</Text>
             </View>
 
             <View style={styles.body}>
-            <Text style={styles.textinput}>Full Name</Text>
-            <Text style={styles.textinput}>Email</Text>
-            <Text>Upload CV/Resume</Text>
-            <Text>Motivation Letter(Optional)</Text>
+
+                <FormText texto='Full Name' />
+                <TextInput style={styles.input1} ></TextInput>
+                <FormText texto='Email' />
+                <TextInput style={styles.input1}></TextInput>
+                <FormText texto='Upload CV/Resume' />
+                <TextInput style={styles.input2}></TextInput>
+                <FormText texto='Motivation Letter(Optional)' />
+                <TextInput style={styles.input3}></TextInput>
+
             </View>
 
             <View style={styles.foot}>
-
+        
 
             </View>
 
@@ -41,7 +48,7 @@ const styles = StyleSheet.create({
         flex: 1.5,
         flexDirection: 'row',
         justifyContent: 'flex-start',
-        alignItems:'flex-end'   
+        alignItems: 'flex-end'
     },
     body: {
         flex: 10,
@@ -49,21 +56,50 @@ const styles = StyleSheet.create({
     },
     foot: {
         flex: 1,
-       
+
         flexDirection: "row",
         justifyContent: 'space-between',
         paddingHorizontal: 20,
         backgroundColor: '#8AB4F8',
 
 
-    }, text:{
-        fontSize: 34,
+    }, text: {
+        fontSize: 28,
         fontStyle: 'normal',
-        paddingLeft:'10%',
-        fontWeight:'bold'
+        paddingLeft: '10%',
+        fontWeight: 'bold'
     },
-    textinput:{
-        fontSize: 16,
+    input1: {
+        backgroundColor: '#FAFAFA',
+        borderRadius: 40,
+        padding: 14,
+        textAlign: 'left',
+        fontSize: 22,
+        color: '#004445',
+        width:'90%',
+        marginTop:10,
+        
+    },
+    input2: {
+        backgroundColor: '#FAFAFA',
+        borderRadius: 20,
+        padding: 40,
+        textAlign: 'left',
+        fontSize: 22,
+        color: '#004445',
+        width:'90%',
+        marginTop:10
+    },
+    input3: {
+        backgroundColor: '#FAFAFA',
+        borderRadius: 20,
+        padding: 80,
+        textAlign: 'left',
+        fontSize: 22,
+        color: '#004445',
+        width:'90%',
+        marginTop:10
     }
+
 });
 
